@@ -1,6 +1,9 @@
 # Local .terraform directories
 .terraform/
 
+# Module repos should not commit a dependency lock file
+.terraform.lock.hcl
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
@@ -42,3 +45,5 @@ terraform.rc
 # Optional: ignore plan files saved before destroying Terraform configuration
 # Uncomment the line below if you want to ignore planout files.
 # planout
+#Ignore PyCharm files
+.idea/
