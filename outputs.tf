@@ -22,3 +22,8 @@ output "kms_key_alias" {
   description = "Alias of the KMS key used to encrypt the Terraform state bucket."
   value       = aws_kms_alias.terraform_state.name
 }
+
+output "secrets_manager_secret_arn" {
+  description = "ARN of the Secrets Manager secret for infrastructure-level secrets."
+  value       = aws_secretsmanager_secret.infrastructure.arn
+}

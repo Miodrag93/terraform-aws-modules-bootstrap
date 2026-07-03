@@ -64,6 +64,7 @@ terraform {
 | kms\_key\_id | ID of the KMS key used to encrypt the Terraform state bucket. |
 | kms\_key\_arn | ARN of the KMS key used to encrypt the Terraform state bucket. |
 | kms\_key\_alias | Alias of the KMS key used to encrypt the Terraform state bucket. |
+| secrets\_manager\_secret\_arn | ARN of the Secrets Manager secret for infrastructure-level secrets. |
 
 ## Resources created
 
